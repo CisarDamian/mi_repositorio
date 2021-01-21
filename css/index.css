@@ -1,0 +1,368 @@
+
+
+
+
+
+body{
+	background-color:#E2BDE2;
+}
+/*-------------------------------------------*/
+/*Header*/
+
+/*header{
+	position:sticky;
+	top:0px;
+	background-color: #27CEB1;
+}
+
+header nav a{
+	color:#1C5BA2;
+}
+header nav ul{
+	list-style:none;
+	font-size:0;
+}
+header nav li{
+
+	display:inline-block;
+	width:20%;
+	position:relative;
+	font-size:16px;
+}
+/*---------------------------------------------*/
+
+
+main{
+	font-family: serif;
+	background-color: #B9CC9C;
+}
+
+
+h1{
+	color: #6D17C6;
+	text-align: center;
+}
+
+h2{
+	color: #9A32E3;
+	font-style: italic;
+}
+
+h3{
+	color: #581BA3;
+	font-style: italic;
+}
+h4{
+	color: #7958BC;
+}
+
+
+ul{
+	color: #F0F8F8;
+	list-style-type: square;
+	
+}
+p{
+	color: #320B8B;
+}
+
+
+/*---------------------------------------------*/
+footer{
+	font-family: Arial;
+	color: #F9FBF7;
+	background-color: #A27DDF;
+}
+
+
+
+/*---------------------------------------------*/
+
+/* Tamaño del logo en index */
+.imagenPlanta{
+	width: 250px;
+	height: 300px;
+	position: center;
+	/*left:650px;*/
+	transition: 2s;
+}
+
+/*Index*/
+.bordes{
+	list-style: square;
+	border: dashed 2px#6A16BF;
+	margin:25px;
+	padding:5px;
+ 	display:block;
+	width:30% ;
+	position: relative;
+/*-------------Gradiente radial---------------------*/
+	background-image:radial-gradient(#418E3F, #B64DCC);
+}
+}
+
+
+
+/*---------------------------------------------*/
+
+/* Atributos en la tabla de "Cocina_vegana"*/
+table, th, td{
+	font-family: "Comic Sans MS";
+	border: solid 2px #3A066F;
+	margin: 5px;
+	padding: 3px;
+	text-align: center;
+	border-spacing: 5px;
+
+}
+
+/*---------------------------------------------*/
+
+/*Color en el formulario de contacto*/
+.formulario{
+	background-color: #C781EF
+}
+
+/*---------------------------------------------*/
+/*Tamaño del titulo */
+.textoGrande{
+	font-size: 40px;
+	text-align: center;
+}
+/*---------------------------------------------*/
+
+/* Atributos para algunos h2 principalmente en la sda pag */
+.subrayado{
+	text-decoration:underline;
+	background-color: #EAD9FA;
+}
+
+
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+
+/*Productos y plantas*/
+
+/*Letras del titulo en la pag "Productos y Plantas"*/
+.colorYtexto{
+	color:#210B39;
+	text-align:center;
+}
+
+
+section{
+	border: dashed 5px ;
+	margin: 10px;
+}
+/*Imagen de fondo en la pag "Productos y Plantas"*/
+.flores{
+	background-image:url("../imagenes/Flor.jpg");
+}
+
+/*----------------------------------------------*/
+
+
+/*----------------------------------------------------*/
+
+/*Flexbox en etiqueta DIV en la pagina Productos y plantas*/
+.padreFlex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+/*------------------------------------------------------*/
+/*tamaños de las imagenes en Productos y plantas*/
+
+.imgPlanta{
+	width: 370px; height: 350px;
+ 	transition: all 2s;
+ }
+ img:hover{
+ 	height: 390px, width: 370px;
+ 	padding: 20px;
+ 	 
+ }
+
+
+/*-----------------------------------------------------*/
+/*flexbox usado en la pagina Cocina vegana para centrar la tabla y agregar imagen de fondo*/
+.tabla{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+background-image:url("../imagenes/Cookies.jpg");
+background-position: right;
+background-size: 15vw 45vh;
+background-repeat:repeat;
+border: solid #0C17AA;
+color: #2930CC;
+
+}
+/*----------------------------------------------------------------------------------------*/
+/*class utilizada en la pagina productos y plantas, en el <p>*/
+.div{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	border:solid 3px #2E38BD;
+	margin: 15px;
+	padding: 20px;
+}
+/*----------------------------------------------------------------------------------------*/
+
+/*GRIDS*/ /*Utilizadas en la pagina de Contactate con nosotros*/
+
+.colorForm{
+
+	color: #FCFCFC;
+}
+
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.5em;
+}
+.titulo{
+	text-align: center;
+	font-size: 4em;
+	color:#5118A7;
+}
+.agrupacion{
+	box-shadow: 0 0 20px 0;
+}
+.agrupacion > *{
+	padding: 2em;
+}
+.contact-form{
+	background-color: #743FBC;
+}
+.contact-form form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .bloque{
+	grid-column: 1/3;
+
+}
+.contact-form form p{
+	margin: 15px;
+	padding: 5px; 
+	color:#FDFCFC;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+	width: 100%;
+	padding: .7em;
+	border: none;
+	background:none;
+	outline: 0;
+	color:#FDF9F9;
+	border-bottom: 1px solid #469DC5;
+}
+.contact-form form button{
+	background-color: #9D8CBA;
+	border: 0;
+	text-transform: uppercase;
+	padding: 15px;
+}
+
+/*------------Transicion del boton ENVIAR-----------------------*/
+.contact-form form button:hover,
+.contact-form form button:focus{
+	background-color: #6B36A1;
+	color:#FAF6F6;
+	height: 85px;
+	transition: height 2s;
+}
+/*---------------------------------------------------------------*/
+.contact-info{
+	background-color: #6E57A4;
+}
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+	text-align: center;
+	margin: 0 0 1rem 0;
+}
+
+.contact-info ul{
+	list-style: none;
+	padding: 0;
+}
+.contact-info ul li{
+	padding: .3em; 
+}
+
+/*Monitor*/
+@media (min-width: 700px){
+body{
+	padding: 0 10px;
+}
+ 
+.agrupacion{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.agrupacion > * {
+	padding:3em; 
+}
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+	padding: 1em;
+	text-align: left;
+}
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+h1{
+	animation-duration: 4s;
+	animation-name: aparecer;
+}
+
+@keyframes aparecer{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*-----------------------------------------*/
+
+header{
+	padding: 10px;
+	height:10vh;
+	width: 100vw;
+	background-image:linear-gradient(#7D60BF, #45D077);
+	color:#5118A7;
+	margin: 5px;
+}
+
+footer{
+	padding: 3px;
+	height:5vh;
+	width: 100vw;
+	background-image:linear-gradient(#5414A4, #995ACE);
+}
+
+.carousel{
+	width: 800px;
+	height:600px;
+	display:block;
+	margin:auto;
+}
+
+.card{
+	background-color: #69B75C;
+}
